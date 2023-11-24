@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed&family=Dosis:wght@200;300;400;500;600&family=Montserrat:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap');
 
-*, ::after, ::before {
+*{
     margin: 0;
     padding: 0;
     box-sizing: inherit;
@@ -23,7 +23,7 @@ body {
 
 .navbar {
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     background-color:#151515;
     width: 100%;
     /* box-shadow: 10px 1px rgb(26,24,59); */
@@ -87,19 +87,19 @@ body {
     border-radius: 10px;
 }
 /* Responsive Navigation Bar */
-header .navbar-toggle {
+.material-symbols-outlined {
     display: none;
     color: #D7DEDC;
   }
 @media (max-width: 948px) {
-    header .header_links ul {
+    .header_links ul {
       flex-wrap: wrap;
       gap: 2px;
     }
-   header .navbar-toggle {
+   .navbar-toggle {
       display: block;
     }
-   header .links {
+   .links {
       display: none;
       width: 100%;
       text-align: center;
@@ -129,6 +129,7 @@ header .navbar-toggle {
     /* margin-top: 23rem; */
     /* align-content: center; */
     position: relative;
+    top: 7.6rem;
 }
 .hero_content {
     /* display: grid;
@@ -175,6 +176,7 @@ header .navbar-toggle {
 .about_section {
     background-color:#244B4D;
     height: 50%;
+    margin-top: 7rem;
 }
 .about_section h2 {
     text-align: center;
