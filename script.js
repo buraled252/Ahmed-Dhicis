@@ -1,6 +1,12 @@
-document.querySelector(".navbar-toggle").addEventListener("click", function () {
-    var links = document.querySelectorAll(".header_links1");
-    for (var i = 0; i < links.length; i++) {
-      links[i].classList.toggle("active");
-    }
-  });
+  const menuBtn = document.querySelector(".menu-btn");
+  const navbarMenu = document.querySelector(".navbar-menu");
+
+  menuBtn.addEventListener("click", ()=> {
+    menuBtn.classList.toggle("active");
+    navbarMenu.classList.toggle("active");
+  })
+
+ document.querySelectorAll(".links").forEach(n => n.addEventListener("click", () => {
+         menuBtn.classList.remove("active");
+         navbarMenu.classList.remove("active");
+    }));
