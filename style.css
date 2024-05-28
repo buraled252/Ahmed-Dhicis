@@ -182,9 +182,10 @@ padding-top: 20px;
 }
 .about_heading {
     padding: 20px;
+    font-size: 10px;
     text-align: center;
-    @media (min-width: 26.5625em) {
-        font-size: 13px;
+    @media (min-width: 630px) {
+        font-size: 15px;
     }
 }
 .about_heading h2 {
@@ -250,12 +251,12 @@ padding-top: 20px;
     text-transform: uppercase;
 }
 .projects_heading {
-    text-align: center;
+     padding: 20px;
+    font-size: 10px;
     color: #fff;
-    padding: 60px;
-    @media (min-width: 26.5625em) {
-        font-size: 13px;
-        padding: 1rem;
+    text-align: center;
+    @media (min-width: 630px) {
+        font-size: 15px;
     }
 
 }
